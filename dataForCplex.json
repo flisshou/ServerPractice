@@ -1,0 +1,47 @@
+{
+  cplex_employees_parameters : {
+
+    "employee_1" : [1, 0, 1, 0],
+    "employee_2" : [1, 1, 1, 0],
+    "employee_3" : [0, 1, 0, 0],
+    "employee_4" : [1, 0, 0, 0],
+    "employee_5" : [0, 1, 1, 0]
+
+  },
+  cplex_managers_parameters : {
+
+    "weekly_bounds" : {
+      "Wmin" : 0,
+      "Wmax" : 8
+    },
+    "dailly_bounds" : {
+      "Dmin" : 7,
+      "Dmax" : 15
+    }
+
+  },
+  cplex_alternative_parameters : {
+
+    "employee_1" : [
+      {"start" : "0700", "end" : "1400"},
+      {"start" : "0700", "end" : "1400"}
+    ],
+    "employee_2" : [
+      {"start" : "0700", "end" : "2200"},
+      {"start" : "0700", "end" : "1400"}
+    ],
+    "employee_3" : [
+      {"start" : "1400", "end" : "2200"},
+      {"start" : "0000", "end" : "0000"}
+    ],
+    "employee_4" : [
+      {"start" : "0700", "end" : "1400"},
+      {"start" : "0000", "end" : "0000"}
+    ],
+    "employee_5" : [
+      {"start" : "1400", "end" : "2200"},
+      {"start" : "0700", "end" : "1400"}
+    ],
+
+  }
+}
